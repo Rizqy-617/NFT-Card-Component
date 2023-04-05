@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+}
+
+main {
+  flex-grow: 1;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 18rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 
+    0 10px 5px 10px hsl(214, 48%, 11%), 
+    0 10px 5px 20px hsl(217, 51%, 12%); 
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .card {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+.card img {
+  width: 18rem;
+  border-radius: 0.5rem;
+}
+
+.upperBody {
+  margin-top: 1rem;
+}
+
+.upperBody h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.upperBody h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.upperBody p {
+  color: hsl(215, 51%, 70%);
+}
+
+.middleBody {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.middleBody img {
+  width: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.middleBody span {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.middleBody .ether {
+  color: hsl(178, 100%, 50%);
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.lowerBody {
+  margin-top: 1rem;
+}
+
+.lowerBody img {
+  width: 2.2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.lowerBody span {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.lowerBody span.white {
+  color: white;
+  margin-left: 0.2rem;
+}
+
+.lowerBody span.white:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  align-items: end;
+  background-color: hsl(215, 51%, 70%);
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
